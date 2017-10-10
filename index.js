@@ -180,6 +180,8 @@ function staticProxy(proxyUrl, port, protocol, staticFolders, verbose, transform
     var port = server.address().port;
     console.log(colors.green('static-proxy listening at http://%s:%s'), host, port);
   });
+  
+  return server
 };
 
 module.exports = staticProxy;
